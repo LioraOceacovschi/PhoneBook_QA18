@@ -7,6 +7,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+
 public class RegistrationTests {
 
     WebDriver wd;
@@ -37,7 +38,7 @@ public class RegistrationTests {
         passInput.clear();
         passInput.sendKeys("$Abcd1234");
 
-        
+
         // 3. submit by click registration button
         wd.findElement(By.xpath("//button[2]")).click();
 
@@ -45,6 +46,42 @@ public class RegistrationTests {
         Assert.assertTrue(wd.findElement(By.xpath("//a[text()='ADD']")).getText().equals("ADD"));
 
 
+    }
+
+    //HW_8 Создать 2 негативных
+    // тестовых метода (неверный email, неверный password) на регистрацию в классе RegistrationTests
+
+    @Test
+    public void registrationWrongEmail(){
+        int i = (int)(System.currentTimeMillis()/1000)%3600;
+        wd.findElement(By.xpath("//a[@href='/login']")).click();
+        WebElement emailInput = wd.findElement(By.xpath("//input[1]"));
+        emailInput.click();
+        emailInput.clear();
+        emailInput.sendKeys("ab" + i + "@m.r");
+
+        WebElement passInput = wd.findElement(By.xpath("//input[2]"));
+        passInput.click();
+        passInput.clear();
+        passInput.sendKeys("ab@m.r");
+
+        wd.findElement(By.xpath("//button[2]")).click();
+    }
+    @Test
+    public void registrationWrongPass(){
+        int i = (int)(System.currentTimeMillis()/1000)%3600;
+        wd.findElement(By.xpath("//a[@href='/login']")).click();
+        WebElement emailInput = wd.findElement(By.xpath("//input[1]"));
+        emailInput.click();
+        emailInput.clear();
+        emailInput.sendKeys("abcde" + i + "@mail.ru");
+
+        WebElement passInput = wd.findElement(By.xpath("//input[2]"));
+        passInput.click();
+        passInput.clear();
+        passInput.sendKeys("1234");
+
+        wd.findElement(By.xpath("//button[2]")).click();
     }
 
 
