@@ -10,7 +10,7 @@ public class LoginTests extends TestBase {
     @Test
     public void loginPositiveTest() {
         User user = User.builder()
-                .email("abc@def.com")
+                .email("@abcdef.com")
                 .password("$Abcdef12345")
                 .build();
         app.getUser().openLoginRegistrationForm();

@@ -34,5 +34,9 @@ Logger logger = LoggerFactory.getLogger(MyListener.class);
         logger.info("Something went wrong!");
         logger.info(throwable.getMessage());
         logger.info(String.valueOf(throwable.fillInStackTrace()));
+        int i = (int)(System.currentTimeMillis() / 1000) % 3600;
+        String link = "src/test/screenshots/screenshot - " + i + ".png";
+        new HelperBase(driver).takeScreenShot(link);
+        logger.info("Here is the link to screenshot with error: " + link);
     }
 }

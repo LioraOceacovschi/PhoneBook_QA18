@@ -48,10 +48,12 @@ public class RegistrationTests extends TestBase{
         int i = (int)(System.currentTimeMillis() / 1000) % 3600;
         String email = "name" + i + "mail.com";
         String password = "$Abcd1234";
+        logger.info("registrationWrongEmail starts with " + email + " & " + password);
         app.getUser().fillLoginRegistrationForm(email, password);
 
 //        3. submit by click registration button
         app.getUser().submitRegistration();
+
 //        4. assert
         Assert.assertTrue(app.getUser().isErrorFormatMessage());
         Assert.assertTrue(app.getUser().isAlertPresent());
