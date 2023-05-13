@@ -1,0 +1,106 @@
+21:05:36.973  INFO  manager.ApplicationManager  Testing on Chrome Driver
+21:05:37.380  INFO  tests.TestBase             ############### Start  test loginNegativeTestWrongEmail
+21:05:37.381  INFO  manager.NGListener  Start of the test: loginNegativeTestWrongEmail
+21:05:37.384  INFO  manager.MyListener  Start searching element by By.xpath: //a[@href='/login']
+21:05:37.408  INFO  manager.MyListener  The element with locator by By.xpath: //a[@href='/login'] is found successfully
+21:05:37.467  INFO  manager.MyListener  Start searching element by By.xpath: //input[1]
+21:05:37.483  INFO  manager.MyListener  The element with locator by By.xpath: //input[1] is found successfully
+21:05:37.598  INFO  manager.MyListener  Start searching element by By.xpath: //input[2]
+21:05:37.622  INFO  manager.MyListener  The element with locator by By.xpath: //input[2] is found successfully
+21:05:37.734  INFO  manager.MyListener  Start searching element by By.xpath: //button[1]
+21:05:37.760  INFO  manager.MyListener  The element with locator by By.xpath: //button[1] is found successfully
+21:05:37.794  INFO  manager.NGListener  Test Success: loginNegativeTestWrongEmail
+21:05:37.795  INFO  tests.TestBase       ###### Finished  #########
+21:05:37.796  INFO  tests.TestBase             ############### Start  test loginPositiveTest
+21:05:37.796  INFO  manager.NGListener  Start of the test: loginPositiveTest
+21:05:37.796  INFO  manager.MyListener  Start searching element by By.xpath: //a[@href='/login']
+21:05:37.820  INFO  manager.MyListener  The element with locator by By.xpath: //a[@href='/login'] is found successfully
+21:05:37.853  INFO  manager.MyListener  Start searching element by By.xpath: //input[1]
+21:05:38.798  INFO  manager.MyListener  Something went wrong!
+21:05:38.799  INFO  manager.MyListener  Cannot locate an element using xpath=//input[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QKHLCVKT', ip: '192.168.88.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: driver.version: EventFiringWebDriver
+21:05:38.799  INFO  manager.MyListener  org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QKHLCVKT', ip: '192.168.88.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: driver.version: EventFiringWebDriver
+21:05:38.806  INFO  manager.NGListener  Test Failure: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong email or password}
+  (Session info: chrome=113.0.5672.93): Wrong email or password
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QKHLCVKT', ip: '192.168.88.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Liora\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49372}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 17061d5548db82bb7f2ae79f47e6ca87
+21:05:38.807  INFO  tests.TestBase       ###### Finished  #########
+21:05:38.812  INFO  tests.TestBase             ############### Start  test loginNegativeTestWrongEmail
+21:05:38.812  INFO  manager.NGListener  Start of the test: loginNegativeTestWrongEmail
+21:05:38.812  INFO  manager.MyListener  Start searching element by By.xpath: //a[@href='/login']
+21:05:38.833  INFO  manager.MyListener  The element with locator by By.xpath: //a[@href='/login'] is found successfully
+21:05:38.864  INFO  manager.MyListener  Start searching element by By.xpath: //input[1]
+21:05:38.881  INFO  manager.MyListener  The element with locator by By.xpath: //input[1] is found successfully
+21:05:39.011  INFO  manager.MyListener  Start searching element by By.xpath: //input[2]
+21:05:39.026  INFO  manager.MyListener  The element with locator by By.xpath: //input[2] is found successfully
+21:05:39.181  INFO  manager.MyListener  Start searching element by By.xpath: //button[1]
+21:05:39.194  INFO  manager.MyListener  The element with locator by By.xpath: //button[1] is found successfully
+21:05:39.227  INFO  manager.NGListener  Test Success: loginNegativeTestWrongEmail
+21:05:39.227  INFO  tests.TestBase       ###### Finished  #########
+21:05:39.229  INFO  tests.TestBase             ############### Start  test loginPositiveTest
+21:05:39.229  INFO  manager.NGListener  Start of the test: loginPositiveTest
+21:05:39.229  INFO  manager.MyListener  Start searching element by By.xpath: //a[@href='/login']
+21:05:39.239  INFO  manager.MyListener  The element with locator by By.xpath: //a[@href='/login'] is found successfully
+21:05:39.275  INFO  manager.MyListener  Start searching element by By.xpath: //input[1]
+21:05:39.593  INFO  manager.MyListener  Something went wrong!
+21:05:39.594  INFO  manager.MyListener  Cannot locate an element using xpath=//input[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QKHLCVKT', ip: '192.168.88.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: driver.version: EventFiringWebDriver
+21:05:39.594  INFO  manager.MyListener  org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QKHLCVKT', ip: '192.168.88.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: driver.version: EventFiringWebDriver
+21:05:39.596  INFO  manager.NGListener  Test Failure: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong email or password}
+  (Session info: chrome=113.0.5672.93): Wrong email or password
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QKHLCVKT', ip: '192.168.88.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Liora\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49372}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 17061d5548db82bb7f2ae79f47e6ca87
+21:05:39.598  INFO  tests.TestBase       ###### Finished  #########
+21:05:39.600  INFO  tests.TestBase             ############### Start  test regPositiveTest
+21:05:39.600  INFO  manager.MyListener  Start searching element by By.xpath: //button[.='Sign Out']
+21:05:49.661  INFO  manager.MyListener  The element with locator by By.xpath: //button[.='Sign Out'] is found successfully
+21:05:49.662  INFO  manager.NGListener  Start of the test: regPositiveTest
+21:05:49.662  INFO  manager.MyListener  Start searching element by By.xpath: //a[@href='/login']
+21:05:49.674  INFO  manager.MyListener  The element with locator by By.xpath: //a[@href='/login'] is found successfully
+21:05:49.717  INFO  manager.MyListener  Start searching element by By.xpath: //input[1]
+21:05:49.735  INFO  manager.MyListener  The element with locator by By.xpath: //input[1] is found successfully
+21:05:49.872  INFO  manager.MyListener  Start searching element by By.xpath: //input[2]
+21:05:49.891  INFO  manager.MyListener  The element with locator by By.xpath: //input[2] is found successfully
+21:05:49.997  INFO  manager.MyListener  Start searching element by By.xpath: //button[2]
+21:05:50.018  INFO  manager.MyListener  The element with locator by By.xpath: //button[2] is found successfully
+21:05:50.049  INFO  manager.MyListener  Start searching element by By.xpath: //a[text()='ADD']
+21:05:50.521  INFO  manager.MyListener  The element with locator by By.xpath: //a[text()='ADD'] is found successfully
+21:05:50.523  INFO  manager.NGListener  Test Success: regPositiveTest
+21:05:50.523  INFO  tests.TestBase       ###### Finished  #########
+21:05:50.524  INFO  tests.TestBase             ############### Start  test registrationWrongEmail
+21:05:50.524  INFO  manager.MyListener  Start searching element by By.xpath: //button[.='Sign Out']
+21:05:50.531  INFO  manager.MyListener  The element with locator by By.xpath: //button[.='Sign Out'] is found successfully
+21:05:50.532  INFO  manager.MyListener  Start searching element by By.xpath: //button[.='Sign Out']
+21:05:50.549  INFO  manager.MyListener  The element with locator by By.xpath: //button[.='Sign Out'] is found successfully
+21:05:50.585  INFO  manager.NGListener  Start of the test: registrationWrongEmail
+21:05:50.587  INFO  manager.MyListener  Start searching element by By.xpath: //a[@href='/login']
+21:05:50.596  INFO  manager.MyListener  The element with locator by By.xpath: //a[@href='/login'] is found successfully
+21:05:50.628  INFO  tests.TestBase  registrationWrongEmail starts with name350mail.com & $Abcd1234
+21:05:50.629  INFO  manager.MyListener  Start searching element by By.xpath: //input[1]
+21:05:50.643  INFO  manager.MyListener  The element with locator by By.xpath: //input[1] is found successfully
+21:05:50.758  INFO  manager.MyListener  Start searching element by By.xpath: //input[2]
+21:05:50.780  INFO  manager.MyListener  The element with locator by By.xpath: //input[2] is found successfully
+21:05:50.896  INFO  manager.MyListener  Start searching element by By.xpath: //button[2]
+21:05:50.906  INFO  manager.MyListener  The element with locator by By.xpath: //button[2] is found successfully
+21:05:51.481  INFO  manager.NGListener  Test Success: registrationWrongEmail
+21:05:51.483  INFO  tests.TestBase       ###### Finished  #########
