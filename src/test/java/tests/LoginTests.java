@@ -1,6 +1,7 @@
 package tests;
 
 import manager.NGListener;
+import manager.ProviderData;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -9,14 +10,17 @@ import org.testng.annotations.Test;
 @Listeners(NGListener.class)
 public class LoginTests extends TestBase {
 
-    @Test(invocationCount = 3,groups = {"smoke"})
-    public void loginPositiveTest() {
-        User user = User.builder()
-                .email("abc@def.com")
-                .password("$Abcdef12345")
-                .build();
+    @BeforeMethod(alwaysRun = true)
+    public void preCondition(){
+        if(app.getUser().isLogged()){
+            app.getUser().logout();
+        }
+    }
+
+    @Test(groups = {"smoke"},dataProvider = "loginModelDto",dataProviderClass = ProviderData.class)
+    public void loginPositiveTest(User data) {
         app.getUser().openLoginRegistrationForm();
-        app.getUser().fillLoginRegistrationForm(user);
+        app.getUser().fillLoginRegistrationForm(data);
         app.getUser().submitLogin();
         Assert.assertTrue(app.getUser().isLogged());
     }
@@ -30,6 +34,8 @@ public class LoginTests extends TestBase {
         app.getUser().openLoginRegistrationForm();
         app.getUser().fillLoginRegistrationForm(user);
         app.getUser().submitLogin();
+        Assert.assertTrue(app.getUser().isAlertTextCorrect("Wrong email or password"));
+        Assert.assertTrue(app.getUser().isAlertPresent());
     }
     @Test(groups = {"regress"})
     public void loginNegativeTestWrongPassword() {
@@ -40,6 +46,8 @@ public class LoginTests extends TestBase {
         app.getUser().openLoginRegistrationForm();
         app.getUser().fillLoginRegistrationForm(user);
         app.getUser().submitLogin();
+        Assert.assertTrue(app.getUser().isAlertTextCorrect("Wrong email or password"));
+        Assert.assertTrue(app.getUser().isAlertPresent());
     }
 
 }

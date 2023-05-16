@@ -1,6 +1,4 @@
 package manager;
-
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
@@ -11,8 +9,7 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-   // WebDriver wd;
-
+    // WebDriver wd;
     String browser;
     EventFiringWebDriver wd;
     HelperUser user;
@@ -23,11 +20,11 @@ public class ApplicationManager {
     }
 
     public void init() {
-       // wd = new ChromeDriver();
-        if(browser.equals(BrowserType.CHROME)){
+        // wd = new ChromeDriver();
+        if (browser.equals(BrowserType.CHROME)) {
             wd = new EventFiringWebDriver(new ChromeDriver());
             logger.info("Testing on Chrome Driver");
-        }else if(browser.equals(BrowserType.FIREFOX)){
+        } else if (browser.equals(BrowserType.FIREFOX)) {
             wd = new EventFiringWebDriver(new FirefoxDriver());
             logger.info("Testing on Firefox Driver");
         }
@@ -39,7 +36,7 @@ public class ApplicationManager {
     }
 
     public void stop() {
-      //  wd.quit();
+         // wd.quit();
     }
 
     public HelperUser getUser() {

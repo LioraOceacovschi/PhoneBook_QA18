@@ -9,26 +9,25 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HelperUser extends HelperBase {
 
-    public boolean isAlertPresent(){
-        Alert alert = new WebDriverWait(wd,10)
+    public boolean isAlertPresent() {
+        Alert alert = new WebDriverWait(wd, 10)
                 .until(ExpectedConditions.alertIsPresent());
-        if(alert==null) return false;
+        if (alert == null) return false;
         else {
             wd.switchTo().alert();
-            System.out.println(alert.getText());
             alert.accept();
             return true;
 
         }
     }
 
-    public boolean isErrorFormatMessage(){
-        Alert alert = new WebDriverWait(wd,10)
+    public boolean isErrorFormatMessage() {
+        Alert alert = new WebDriverWait(wd, 10)
                 .until(ExpectedConditions.alertIsPresent());
-       return alert.getText().contains("Wrong email or password");
+        return alert.getText().contains("Wrong email or password");
     }
 
-    public  HelperUser(WebDriver wd){
+    public HelperUser(WebDriver wd) {
         super(wd);
     }
 
@@ -50,6 +49,7 @@ public class HelperUser extends HelperBase {
         type(By.xpath("//input[1]"), email);
         type(By.xpath("//input[2]"), password);
     }
+
     public void fillLoginRegistrationForm(User user) {
         type(By.xpath("//input[1]"), user.getEmail());
         type(By.xpath("//input[2]"), user.getPassword());
@@ -64,4 +64,13 @@ public class HelperUser extends HelperBase {
     }
 
 
+    public boolean isAlertTextCorrect(String text) {
+        Alert alert = new WebDriverWait(wd, 10)
+                .until(ExpectedConditions.alertIsPresent());
+        if (alert == null)
+            return false;
+
+        wd.switchTo().alert();
+        return alert.getText().contains(text);
+    }
 }

@@ -55,7 +55,7 @@ public class RegistrationTests extends TestBase{
         app.getUser().submitRegistration();
 
 //        4. assert
-        Assert.assertTrue(app.getUser().isErrorFormatMessage());
+        Assert.assertTrue(app.getUser().isAlertTextCorrect("Wrong email or password"));
         Assert.assertTrue(app.getUser().isAlertPresent());
     }
 
