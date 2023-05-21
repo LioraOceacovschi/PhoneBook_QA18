@@ -9,16 +9,18 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import java.io.IOException;
 import java.lang.reflect.Method;
 
 public class TestBase {
 Logger logger = LoggerFactory.getLogger(TestBase.class);
     public static ApplicationManager app = new ApplicationManager(
             System.getProperty("browser", BrowserType.CHROME)
+
     );
 
     @BeforeSuite(alwaysRun = true)
-    public void setUp() {
+    public void setUp() throws IOException {
         app.init();
     }
 
