@@ -29,7 +29,8 @@ public class ApplicationManager {
 
     public void init() throws IOException {
         // wd = new ChromeDriver();
-        properties.load( new FileReader(new File("src/test/resources/config.properties")));
+        String config = System.getProperty("configuration","config");
+        properties.load( new FileReader(new File(String.format("src/test/resources/%s.properties",config))));
         if (browser.equals(BrowserType.CHROME)) {
             wd = new EventFiringWebDriver(new ChromeDriver());
             logger.info("Testing on Chrome Driver");
