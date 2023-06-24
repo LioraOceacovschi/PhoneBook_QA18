@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class tests.RegistrationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class tests.RegistrationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/tests.html">tests</a> &gt; RegistrationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">3</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">10.607s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">40%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="regPositiveTestCSV[0](User(email=anna51121@mail.ru, password=$Abcdef12345))"></a>
+<h3 class="failures">regPositiveTestCSV[0](User(email=anna51121@mail.ru, password=$Abcdef12345))</h3>
+<span class="code">
+<pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User already exist: 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QKHLCVKT', ip: '192.168.88.114', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19932, moz:profile: C:\Users\Liora\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 52c7778f-6a9d-48e9-8017-a029ed643788
+*** Element info: {Using=xpath, value=//a[text()='ADD']}
+	at app//manager.NGListener.onTestFailure(NGListener.java:29)
+	at app//org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+	at app//org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+	at app//org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:656)
+	at app//org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at app//org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at app//org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at app//org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at app//org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at app//org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@11.0.16.1/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at app//org.testng.TestRunner.run(TestRunner.java:596)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1063)
+	at app//org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:146)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:91)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.16.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.16.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="regPositiveTestCSV[1](User(email=anna61121@mail.ru, password=$Abcdef12346))"></a>
+<h3 class="failures">regPositiveTestCSV[1](User(email=anna61121@mail.ru, password=$Abcdef12346))</h3>
+<span class="code">
+<pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User already exist: 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QKHLCVKT', ip: '192.168.88.114', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19932, moz:profile: C:\Users\Liora\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 52c7778f-6a9d-48e9-8017-a029ed643788
+*** Element info: {Using=xpath, value=//a[text()='ADD']}
+	at app//manager.NGListener.onTestFailure(NGListener.java:29)
+	at app//org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+	at app//org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+	at app//org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:656)
+	at app//org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at app//org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at app//org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at app//org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at app//org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at app//org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@11.0.16.1/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at app//org.testng.TestRunner.run(TestRunner.java:596)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1063)
+	at app//org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:146)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:91)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.16.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.16.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="regPositiveTestCSV[2](User(email=anna71121@mail.ru, password=$Abcdef12347))"></a>
+<h3 class="failures">regPositiveTestCSV[2](User(email=anna71121@mail.ru, password=$Abcdef12347))</h3>
+<span class="code">
+<pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User already exist: 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QKHLCVKT', ip: '192.168.88.114', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19932, moz:profile: C:\Users\Liora\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 52c7778f-6a9d-48e9-8017-a029ed643788
+*** Element info: {Using=xpath, value=//a[text()='ADD']}
+	at app//manager.NGListener.onTestFailure(NGListener.java:29)
+	at app//org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+	at app//org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+	at app//org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:656)
+	at app//org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at app//org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at app//org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at app//org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at app//org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at app//org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@11.0.16.1/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at app//org.testng.TestRunner.run(TestRunner.java:596)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1063)
+	at app//org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:146)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:91)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.16.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.16.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">regPositiveTest</td>
+<td class="success">1.309s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">regPositiveTestCSV[0](User(email=anna51121@mail.ru, password=$Abcdef12345))</td>
+<td class="failures">1.425s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">regPositiveTestCSV[1](User(email=anna61121@mail.ru, password=$Abcdef12346))</td>
+<td class="failures">1.460s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">regPositiveTestCSV[2](User(email=anna71121@mail.ru, password=$Abcdef12347))</td>
+<td class="failures">3.105s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">registrationWrongEmail</td>
+<td class="success">3.308s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Wrong email or password format
+            Email must contains one @ and minimum 2 symbols after last dot
+            Password must contain at least one uppercase letter!
+            Password must contain at least one lowercase letter!
+            Password must contain at least one digit!
+            Password must contain at least one special symbol from [‘$’,’~’,’-‘,’_’]!
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://telranedu.web.app.&quot;
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://telranedu.web.app.&quot;
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://telranedu.web.app.&quot;
+1687543107882	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/&lt;@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://telranedu.web.app.&quot;
+1687543109172	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/&lt;@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1687543120749	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/&lt;@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1687543122078	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/&lt;@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://telranedu.web.app.&quot;
+1687543122856	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/&lt;@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 23 июн. 2023 г., 20:58:44</p>
+</div>
+</div>
+</body>
+</html>

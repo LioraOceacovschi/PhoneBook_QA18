@@ -60,3 +60,9 @@ task tests(type: Test) {
         }
     }
 }
+
+task test1(type: Test){
+    useTestNG(){
+        suites 'src/test/resources/login.xml'
+    }
+}

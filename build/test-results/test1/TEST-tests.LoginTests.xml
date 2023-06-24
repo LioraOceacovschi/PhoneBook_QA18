@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.LoginTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-06-23T17:45:43" hostname="LAPTOP-QKHLCVKT" time="25.334">
+  <properties/>
+  <testcase name="loginNegativeTestWrongEmail" classname="tests.LoginTests" time="1.534"/>
+  <testcase name="loginNegativeTestWrongPassword" classname="tests.LoginTests" time="0.944"/>
+  <testcase name="loginPositiveTest[0](User(email=abc@def.com, password=$Abcdef12345))" classname="tests.LoginTests" time="0.642"/>
+  <testcase name="loginPositiveTest[1](User(email=abc@def.com, password=$Abcdef12345))" classname="tests.LoginTests" time="0.693"/>
+  <testcase name="loginPositiveTest[2](User(email=abc@def.com, password=$Abcdef12345))" classname="tests.LoginTests" time="0.614"/>
+  <testcase name="loginPositiveTestConfig" classname="tests.LoginTests" time="0.603"/>
+  <system-out><![CDATA[Wrong email or password
+Wrong email or password
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
